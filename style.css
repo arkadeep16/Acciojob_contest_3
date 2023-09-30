@@ -1,0 +1,608 @@
+/* CSS Library */
+
+/* root.css */
+
+/* Primary Color */
+:root {
+  --primary-color: #f94a3d; /* 3c31dd Change this color to set your primary color */
+  --bg-color: #1b1b1e;
+}
+
+/* Secondary Color */
+:root {
+  --whole--light-theme: #6c757d; /* Change this color to set your secondary color */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  text-transform: capitalize;
+}
+body {
+  background-color: #1b1b1e;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+hr {
+  color: #c0c5c9;
+}
+.container {
+  max-width: 1200px; /* Adjust the maximum width as per your design */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding for spacing within the container */
+  box-sizing: border-box; /* Include padding and borders within the width */
+}
+section {
+  padding: 60px 0;
+}
+.title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.text-center {
+  text-align: center;
+}
+
+.card {
+  width: 200px;
+  position: relative;
+  padding: 20px; /* Add padding to the card content */
+
+  /* Border properties */
+  border: 3px solid transparent; /* Set a transparent solid border */
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(143, 141, 150, 0) 50%,
+    #2f2b3a 100%
+  );
+  border-image-slice: 1; /* Ensures the entire gradient is used as the border */
+  border-image-repeat: stretch; /* Stretch the gradient to fit the border */
+
+  /* Border radius */
+  border-bottom-left-radius: 20px; /* Add a border radius of 20px */
+  color: #fff;
+  line-height: 1.2;
+}
+.card-active {
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(255, 207, 3, 0) 50%,
+    #ffcf03 100%
+  );
+}
+
+.btn {
+  width: 50%;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px var(--primary-color) solid;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+/* Backgrounds & colored buttons */
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--bg-color);
+  color: #fff;
+}
+
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: #333;
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+/* Text sizes */
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+}
+.d-flex {
+  display: flex;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Margin */
+.my-1 {
+  margin: 0.8rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.mx-2 {
+  margin: 0 1.5rem;
+}
+
+.mx-3 {
+  margin: 0 2rem;
+}
+
+.mx-4 {
+  margin: 0 3rem;
+}
+
+.mx-5 {
+  margin: 0 4rem;
+}
+
+/* Padding */
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
+.px-1 {
+  margin: 0 1rem;
+}
+
+.px-2 {
+  margin: 0 1.5rem;
+}
+
+.px-3 {
+  margin: 0 2rem;
+}
+
+.px-4 {
+  margin: 0 3rem;
+}
+
+.px-5 {
+  margin: 0 4rem;
+}
+
+.nav-link ul li {
+  padding-inline: 10px;
+}
+.nav-right-contents div {
+  margin-inline: 10px;
+}
+
+/* search bar */
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  background: transparent;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 2px solid #fff;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+.searchTerm:value {
+  color: #333;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 2px solid #fff;
+  border-left: none;
+  background-color: transparent;
+  text-align: center;
+  color: #333;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.hero {
+  background-color: #343541;
+}
+
+/* hero */
+
+.hero-right img {
+  width: 603px;
+}
+/* card section */
+.card-section .container {
+  width: 1100px;
+}
+.card-section .card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+.card-section {
+  background-color: #202123;
+}
+.card-section p,
+.card-section h1 {
+  color: #fff;
+}
+
+.card-section h1 {
+  font-size: 35px;
+}
+.card-section .card img {
+  width: 50%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.card-section .card:nth-child(3) img {
+  width: 60%;
+}
+.card-section .card:nth-child(2) img {
+  width: 55%;
+}
+.content-width {
+  width: 25%;
+  line-height: 1.3;
+}
+.content-width p {
+  padding-top: 10px;
+}
+/* food cards*/
+.card-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card-wrap .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 338px;
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(255, 207, 3, 0) 30%,
+    #2f2b3a 100%
+  );
+}
+.card-wrap .card-active {
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(255, 207, 3, 0) 30%,
+    #ffcf03 100%
+  );
+}
+.food-card .card img {
+  width: 50%;
+
+  padding-bottom: 10px;
+}
+.food-card .card .btn {
+  width: 50%;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.fa-star {
+  color: gold;
+  font-size: 12px;
+  padding-inline: 2px;
+}
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type='radio'] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+   Styling
+  */
+.tabset {
+  margin-top: 60px;
+}
+.tabset > label {
+  padding: 15px 15px 25px;
+  position: relative;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-bottom: 0;
+}
+
+.tabset-active label::after {
+  content: '';
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+input:focus-visible + label {
+  outline: 2px solid rgba(0, 102, 204, 1);
+  border-radius: 3px;
+}
+
+.tabset-active > label:hover,
+.tabset-active > input:focus + label,
+.tabset-active > input:checked + label {
+  color: #06c;
+}
+
+.tabset-active > label:hover::after,
+.tabset-active > input:focus + label::after,
+.tabset-active > input:checked + label::after {
+  background: #06c;
+}
+
+.tabset > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+/*
+   
+/* testimonial */
+.testimonial {
+  background-color: #444654;
+}
+.testi-wrap {
+  width: 70%;
+  gap: 70px;
+}
+.testi-left {
+  width: 70%;
+}
+.testi-left:nth-child(2),
+.testi-left:nth-child(3) {
+  margin-bottom: 15px;
+}
+.testi-left img {
+  width: 25%;
+  height: 25%;
+  padding-right: 15px;
+}
+.testi-bg-wrap {
+  background-color: #8d8d8d;
+  border-radius: 10px;
+  padding: 8px 0;
+}
+.testi-bg-wrap:first-child,
+.testi-bg-wrap:nth-child(2),
+.testi-bg-wrap:nth-child(3) {
+  margin-bottom: 15px;
+}
+.testi-border-right {
+  border-right: 2px solid #fff;
+  background-color: #fff;
+  width: 2px;
+  height: 250px;
+}
+.testi-border-right {
+  border-right: 2px solid #fff;
+  background-color: #fff;
+  width: 2px;
+  height: 250px;
+}
+/* cta */
+.cta-bg {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(./image/Call\ to\ Action.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 35px;
+  height: 400px;
+}
+.cta-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* footer */
+
+footer {
+  gap: 50px;
+  padding: 1000px;
+}

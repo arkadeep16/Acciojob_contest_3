@@ -3,7 +3,308 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="container d-flex justify-between align-center">
+        <div class="logo">
+          <img src="./image/Group 1000002637.png" alt="" />
+        </div>
+        <div class="nav-link">
+          <ul class="d-flex justify-around">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#shop">shop</a></li>
+            <li><a href="#food">food</a></li>
+            <li><a href="#recipes">recipes</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-right-contents d-flex justify-around align-center">
+          <div class="search">
+            <input
+              type="text"
+              class="searchTerm"
+              placeholder="search your item"
+            />
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <div class="cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+          <div class="btn btn-primary">sign in</div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <div class="container d-flex align-center justify-around">
+          <div class="hero-left">
+            <div class="d-flex align-center">
+              <span>More than Faster</span>
+              <span class="frenchfry"
+                ><img
+                  class="flex"
+                  src="./image/Group (4).png"
+                  alt=""
+                  width="30px"
+              /></span>
+            </div>
+            <h1>Get your cuisine delivered right to <span>your door</span></h1>
+            <p>
+              Food that is delivered at the right time. The trendy food delivery
+              partner. Good food is what we deliver. Your hunger companion.
+            </p>
+            <button class="btn btn-primary">explore food</button>
+          </div>
+          <div class="hero-right">
+            <img src="./image/Frame.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- card -->
+      <section class="card-section">
+        <div class="container">
+          <div class="flex align-center">
+            <div class="content-width">
+              <h1>Why we are Best in our Town</h1>
+              <p>
+                whole grains and low-fat dairy can help to reduce your risk of
+                heart disease by maintaining blood pressure and
+              </p>
+            </div>
+            <div class="card">
+              <img src="./image/Group 1000002745.png" alt="" />
+              <p>
+                Choose <br />
+                your favorite <br />
+                food
+              </p>
+            </div>
+            <div class="card card-active">
+              <img src="./image/Group 1000002740.png" alt="" />
+              <p>
+                Get delivery <br />
+                at your door <br />
+                step
+              </p>
+            </div>
+            <div class="card">
+              <img src="./image/Group 1000002741.png" alt="" />
+              <p>
+                We have <br />
+                400+ Review <br />
+                On our app
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- food card -->
+      <section>
+        <div class="food-card">
+          <div class="container">
+            <h1 class="title text-center">Try Our Special Recipes</h1>
+            
+            <div class="tabset d-flex align-center justify-center ">
+                <!-- Tab 1 -->
+                <input type="radio" name="tabset tabset-active" id="tab1" aria-controls="marzen" checked>
+                <label for="tab1">fast food</label>
+                <!-- Tab 2 -->
+                <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+                <label for="tab2">Rice menu</label>
+                <!-- Tab 3 -->
+                <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+                <label for="tab3">desserts</label>
+                 <!-- Tab 4 -->
+                 <input type="radio" name="tabset" id="tab4" aria-controls="dunkles">
+                 <label for="tab4">coffee</label>
+                  <!-- Tab 5 -->
+                <input type="radio" name="tabset" id="tab5" aria-controls="dunkles">
+                <label for="tab5">pizza</label>
+                 <!-- Tab 3 -->
+                 <input type="radio" name="tabset" id="tab6" aria-controls="dunkles">
+                 <label for="tab6">see all product</label> 
+              </div> <hr>
+              <div class="card-wrap py-3">
+                <div class="card">
+    <img src="./image/Frame (1).png" alt="" />
+    <ul class="d-flex">
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+    </ul>
+    <h3 class="my-1">Crispy Fried Chicken</h3>
+    <p>price <span>$ 13.00</span></p>
+    <button class="btn btn-outline my-1">add to cart</button>
+  </div>
+  <div class="card">
+    <img src="./image/Frame (2).png" alt="" />
+    <ul class="d-flex">
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+    </ul>
+    <h3 class="my-1">Crispy Fried Chicken</h3>
+    <p>price <span>$ 13.00</span></p>
+    <button class="btn btn-outline my-1">add to cart</button>
+  </div>
+  <div class="card card-active">
+    <img src="./image/Frame (3).png" alt="" />
+    <ul class="d-flex">
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+    </ul>
+    <h3 class="my-1">Crispy Fried Chicken</h3>
+    <p>price <span>$ 13.00</span></p>
+    <button class="btn btn-outline my-1">add to cart</button>
+  </div>
+  <div class="card">
+    <img src="./image/Frame (2).png" alt="" />
+    <ul class="d-flex">
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+    </ul>
+    <h3 class="my-1">Crispy Fried Chicken</h3>
+    <p>price <span>$ 13.00</span></p>
+    <button class="btn btn-outline my-1">add to cart</button>
+  </div>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial -->
+      <section class="testimonial">
+        <div class="container testi-wrap d-flex justify-center align-center">
+            <div class="testi-left">
+                <div class="testi-bg-wrap d-flex align-center justify-center ">
+                    <img src="./image/Ellipse 2518 (1).png" alt="">
+                    <div>
+                        <h4>Rosele Desoza</h4>
+                        <p class="sm">Marketing Coordinator</p>
+                    </div>
+                </div>
+                <div class="d-flex align-center justify-center">
+                    <img src="./image/Ellipse 2518 (2).png" alt="">
+                    <div>
+                        <h4>Rosele Desoza</h4>
+                        <p>Marketing Coordinator</p>
+                    </div>
+                </div>
+                <div class="d-flex align-center justify-center py-1">
+                    <img src="./image/Ellipse 2518 (3).png" alt="">
+                    <div>
+                        <h4>Rosele Desoza</h4>
+                        <p>Marketing Coordinator</p>
+                    </div>
+                </div>
+                <div class="d-flex align-center justify-center">
+                    <img src="./image/Ellipse 2518.png" alt="">
+                    <div>
+                        <h4>Rosele Desoza</h4>
+                        <p>Marketing Coordinator</p>
+                    </div>
+                </div>
+                
+             
+            </div>
+            <div class="testi-border-right"></div>
+            <div class="testi-right">
+                <h2>What our Customers are saying</h2>
+                <div class="py-2 d-flex justify-between align-center">
+                    <div>
+                        <h4>Rosele Desoza</h4>
+                        <p>Marketing Coordinator</p>
+                    </div>
+                    <ul class="d-flex">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                      </ul>
+                </div>
+                <p>“Having good restaurant reviews is crucial these days. It is not just making our decision to pick one easier, it is also helping the restaurant be more successful. You can quickly copy and paste these good restaurant review examples, publish them on Facebook”</p>
+                
+                
+            </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="container d-flex justify-center align-center">
+            <img src="./image/Group 1000002779.png" alt="" height="695px" >
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container d-flex justify-between align-center">
+        <div>
+            <img src="./image/Group 1000002637.png" alt="">
+            <p>Retail food delivery is a courier service in which a restaurant, store, or independent food-delivery</p>
+            <ul class="d-flex">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            
+            </ul>
+        </div>
+        <div>
+            <h3>company</h3>
+            <ul>
+                <li>about us</li>
+                <li>blog</li>
+                <li>all products</li>
+                <li>location map</li>
+            </ul>
+        </div>
+        <div>
+            <h3>services</h3>
+            <ul>
+                <li>order tracking</li>
+                <li>wish list</li>
+                <li>my account</li>
+                <li>terms and conditions</li>
+            </ul>
+        </div>
+        <div>
+            <h3>support</h3>
+            <ul>
+                <li>FAQ</li>
+                <li>policy</li>
+                <li>business</li>
+                <li>support career</li>
+            </ul>
+        </div>
+        <div>
+            <h3>contact</h3>
+            <ul>
+                <li>whatsapp</li>
+                <li>support24</li>
+                <li>quick chat</li>
+            </ul>
+        </div>
+        
+    </footer>
+  </body>
 </html>
