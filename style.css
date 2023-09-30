@@ -338,7 +338,12 @@ section {
 .px-5 {
   margin: 0 4rem;
 }
-
+header {
+  position: sticky;
+  background: #1b1b1e;
+  top: 0;
+  z-index: 999;
+}
 .nav-link ul li {
   padding-inline: 10px;
 }
